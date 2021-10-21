@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/s-bobaho/static/css/main.a617e044.chunk.css",
+    "main.js": "/s-bobaho/static/js/main.1bb4bbb4.chunk.js",
+    "main.js.map": "/s-bobaho/static/js/main.1bb4bbb4.chunk.js.map",
+    "runtime-main.js": "/s-bobaho/static/js/runtime-main.debdb763.js",
+    "runtime-main.js.map": "/s-bobaho/static/js/runtime-main.debdb763.js.map",
+    "static/js/2.38be8e81.chunk.js": "/s-bobaho/static/js/2.38be8e81.chunk.js",
+    "static/js/2.38be8e81.chunk.js.map": "/s-bobaho/static/js/2.38be8e81.chunk.js.map",
+    "static/js/3.5ff7ceb8.chunk.js": "/s-bobaho/static/js/3.5ff7ceb8.chunk.js",
+    "static/js/3.5ff7ceb8.chunk.js.map": "/s-bobaho/static/js/3.5ff7ceb8.chunk.js.map",
+    "index.html": "/s-bobaho/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/s-bobaho/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.38be8e81.chunk.js.LICENSE.txt": "/s-bobaho/static/js/2.38be8e81.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/s-bobaho/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.debdb763.js",
+    "static/js/2.38be8e81.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.1bb4bbb4.chunk.js"
+  ]
+}
