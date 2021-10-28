@@ -1,28 +1,25 @@
 {
   "files": {
-    "main.css": "/s-bobaho/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/s-bobaho/static/js/main.330f8156.chunk.js",
-    "main.js.map": "/s-bobaho/static/js/main.330f8156.chunk.js.map",
-    "runtime-main.js": "/s-bobaho/static/js/runtime-main.930644c4.js",
-    "runtime-main.js.map": "/s-bobaho/static/js/runtime-main.930644c4.js.map",
+    "main.js": "/s-bobaho/static/js/main.421670ec.chunk.js",
+    "main.js.map": "/s-bobaho/static/js/main.421670ec.chunk.js.map",
+    "runtime-main.js": "/s-bobaho/static/js/runtime-main.057e6014.js",
+    "runtime-main.js.map": "/s-bobaho/static/js/runtime-main.057e6014.js.map",
     "static/css/2.18280f5f.chunk.css": "/s-bobaho/static/css/2.18280f5f.chunk.css",
-    "static/js/2.709b09b6.chunk.js": "/s-bobaho/static/js/2.709b09b6.chunk.js",
-    "static/js/2.709b09b6.chunk.js.map": "/s-bobaho/static/js/2.709b09b6.chunk.js.map",
-    "static/js/3.fa5ce4c1.chunk.js": "/s-bobaho/static/js/3.fa5ce4c1.chunk.js",
-    "static/js/3.fa5ce4c1.chunk.js.map": "/s-bobaho/static/js/3.fa5ce4c1.chunk.js.map",
+    "static/js/2.b38eccea.chunk.js": "/s-bobaho/static/js/2.b38eccea.chunk.js",
+    "static/js/2.b38eccea.chunk.js.map": "/s-bobaho/static/js/2.b38eccea.chunk.js.map",
+    "static/js/3.a11f3df8.chunk.js": "/s-bobaho/static/js/3.a11f3df8.chunk.js",
+    "static/js/3.a11f3df8.chunk.js.map": "/s-bobaho/static/js/3.a11f3df8.chunk.js.map",
     "index.html": "/s-bobaho/index.html",
     "static/css/2.18280f5f.chunk.css.map": "/s-bobaho/static/css/2.18280f5f.chunk.css.map",
-    "static/css/main.6dea0f05.chunk.css.map": "/s-bobaho/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.709b09b6.chunk.js.LICENSE.txt": "/s-bobaho/static/js/2.709b09b6.chunk.js.LICENSE.txt",
+    "static/js/2.b38eccea.chunk.js.LICENSE.txt": "/s-bobaho/static/js/2.b38eccea.chunk.js.LICENSE.txt",
     "static/media/earth-img.58e0b0f3.png": "/s-bobaho/static/media/earth-img.58e0b0f3.png",
     "static/media/main-wave.a359489c.png": "/s-bobaho/static/media/main-wave.a359489c.png",
     "static/media/index.css": "/s-bobaho/static/media/montserrat-vietnamese-400-normal.968b706e.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.930644c4.js",
+    "static/js/runtime-main.057e6014.js",
     "static/css/2.18280f5f.chunk.css",
-    "static/js/2.709b09b6.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.330f8156.chunk.js"
+    "static/js/2.b38eccea.chunk.js",
+    "static/js/main.421670ec.chunk.js"
   ]
 }
