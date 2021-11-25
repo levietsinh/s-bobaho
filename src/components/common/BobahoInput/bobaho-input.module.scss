@@ -1,0 +1,21 @@
+.bobahoGroup {
+  .bobahoInput {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: unset;
+    border: unset;
+    height: 40px;
+    font-size: 16px;
+    background: #fff;
+    caret-color: #008664;
+    padding: 0 12px;
+  }
+  .bobahoLabel {
+    color: #fff;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

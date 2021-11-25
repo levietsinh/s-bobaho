@@ -1,0 +1,22 @@
+.bobahoButton {
+  width: 100%;
+  text-transform: unset !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  padding: 8px 12px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  border: 2px solid #fff !important;
+  background: transparent;
+  outline: none !important;
+  &:hover {
+    color: #008664 !important;
+    background: #fff !important;
+    outline: none !important;
+  }
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+}
