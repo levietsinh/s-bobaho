@@ -2,6 +2,7 @@ import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import Home from './components/Home/index'
 import SignIn from './components/SignIn/index'
 import SignUp from './components/SignUp/index'
+import ForgotPassword from './components/ForgotPassword/index'
 import Welcome from './components/Welcome/index'
 import { withStyles } from '@mui/styles';
 import { createBrowserHistory } from 'history';
@@ -73,6 +74,7 @@ function App() {
             </Route>
             <Route path={`${process.env.PUBLIC_URL}/sign-in`} component={SignIn} />
             <Route path={`${process.env.PUBLIC_URL}/sign-up`} component={SignUp} />
+            <Route path={`${process.env.PUBLIC_URL}/forgot-password`} component={ForgotPassword} />
             <Route path={`${process.env.PUBLIC_URL}/welcome`} component={Welcome} />
           </Switch>
         </Router>

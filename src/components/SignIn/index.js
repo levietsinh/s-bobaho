@@ -3,8 +3,8 @@ import { makeStyles } from "@mui/styles";
 import BabahoInput from "../common/BobahoInput";
 import BobahoButton from '../common/BobahoButton'
 import styles from './SignIn.module.scss'
-import EntranceLayout from "../../layouts/EntranceLayout";
-import { Link } from "react-router-dom";
+import EntranceLayout from "../../layouts/EntranceLayout"
+import { Link } from "react-router-dom"
 
 const useStyles = makeStyles({
   welcome: {
@@ -12,13 +12,6 @@ const useStyles = makeStyles({
     fontWeight: 700,
     color: '#fff',
     marginBottom: 24
-  },
-  form: {
-    width: 380,
-    backgroundColor: '#008664',
-    padding: '24px 40px',
-    borderRadius: 40,
-    boxShadow: '0px 3px 10px #ffffff17'
   }
 })
 const SignIn = () => {
@@ -26,7 +19,7 @@ const SignIn = () => {
   return (
     <EntranceLayout>
       <div className={classes.welcome}>Welcome</div>
-      <div className={classes.form}>
+      <div className={styles.form}>
         <div style={{marginBottom: 16}}>
           <BabahoInput
             id="cmnd"
@@ -41,7 +34,11 @@ const SignIn = () => {
           placeholder="Mật khẩu"
           type="password"
         />
-        <div className={styles.forgotPassword}>Quên mật khẩu?</div>
+        <div className={styles.forgotPassword}>
+          <Link to={process.env.PUBLIC_URL + '/forgot-password'}>
+            Quên mật khẩu?
+          </Link>
+        </div>
         <div className={styles.submitButton}>
           <BobahoButton name="Đăng nhập"/>
         </div>
