@@ -1,17 +1,17 @@
-import { Router, Route, Switch, Redirect } from 'react-router-dom'
+import { Router, Route, Switch, Redirect, useHistory } from 'react-router-dom'
 import Home from './components/Home/index'
 import SignIn from './components/SignIn/index'
 import SignUp from './components/SignUp/index'
 import ForgotPassword from './components/ForgotPassword/index'
 import Welcome from './components/Welcome/index'
-import { withStyles } from '@mui/styles';
-import { createBrowserHistory } from 'history';
-import { useState } from 'react';
-import GlobalStyles from './components/GlobalStyles';
+import { withStyles } from '@mui/styles'
+import { useState, useEffect } from 'react'
+import GlobalStyles from './components/GlobalStyles'
+import { withCookies, useCookies } from 'react-cookie'
 
 import "@fontsource/montserrat";
 function App() {
-  const history = createBrowserHistory();
+  const history = useHistory()
   const GlobalCss = withStyles({
     "@global": {
       "html, body": {
@@ -62,7 +62,11 @@ function App() {
       }
     }
   })(() => null);
-  const [isLogin, setIsLogin] = useState(false)
+  const [cookies] = useCookies('user')
+  const [isLogin, setIsLogin] = useState('')
+  useEffect(() => {
+    cookies.user ? setIsLogin(true) : setIsLogin(false)
+  }, [cookies, isLogin])
   return (
     <GlobalStyles>
       <div className="App" style={{ fontFamily: 'Montserrat' }}>
@@ -83,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default withCookies(App);

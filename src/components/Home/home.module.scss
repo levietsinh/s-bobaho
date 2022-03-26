@@ -1,0 +1,47 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  &__background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__earthImg {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+  }
+  &__heading {
+    position: absolute;
+    top: 65vh;
+    left: 5%;
+    .home__headingH2 {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .home__headingP {
+      img {
+        margin-right: 8px;
+      }
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+  }
+}
+.welcome {
+  text-align: center;
+  &__heading {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  &__subtext {
+    p {
+      margin-bottom: 8px;
+    }
+  }
+  img {
+    margin: 24px 0;
+  }
+}

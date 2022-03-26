@@ -1,0 +1,35 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 1009;
+  &__logo {}
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          font-weight: 700;
+          opacity: 0.7;
+        }
+        &.cart {
+          display: flex;
+          align-items: center;
+          img {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    li + li {
+      margin-left: 20px;
+    }
+  }
+}
