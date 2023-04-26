@@ -1,3 +1,9 @@
+.welcome {
+  font-size: 32px;
+  font-weight: 700;
+  color: "#fff";
+  margin-bottom: 24px;
+}
 .forgotPassword,
 .signUp {
   width: 100%;
@@ -8,19 +14,23 @@
   font-size: 14px;
   display: block;
   text-align: center;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .forgotPassword {
-  TEXT-ALIGN: END;
+  text-align: end;
+
   a {
     color: #fff;
     font-size: 12px;
   }
 }
+
 .submitButton {
-  margin-top: 36px;
+  margin-top: 20px;
 }
 
 .form {
@@ -30,6 +40,19 @@
   border-radius: 40px;
   background-color: #008664;
 }
+
+.signin__auth2 {
+  p {
+    color: #fff;
+    text-align: center;
+    margin: 12px 0;
+  }
+  &-buttons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
 @media screen and (max-width: 775px) {
   .form {
     width: 90%;

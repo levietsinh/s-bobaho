@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Link } from 'react-router-dom'
-import styles from './header.module.scss'
-import Logo from './../../../images/logo.png'
-import Cart from './../../../images/cart.png'
+import { BrowserRouter, Link } from "react-router-dom";
+import styles from "./header.module.scss";
+import Logo from "./../../../images/logo.png";
+import Cart from "./../../../images/cart.png";
 const Header = () => {
-  const [isScroll, setIsScroll] = useState(false)
+  const [isScroll, setIsScroll] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.pageYOffset === 0 ? setIsScroll(false) : setIsScroll(true)
-    })
+    window.addEventListener("scroll", () => {
+      setIsScroll(window.pageYOffset > 0);
+    });
     return () => {
-      window.removeEventListener('scroll', () => {})
-    }
-  })
+      window.removeEventListener("scroll", () => {});
+    };
+  });
   return (
     // <BrowserRouter basename={process.env.PUBLIC_URL}>
     <header className={isScroll ? styles.headerScroll : styles.header}>
       <div className={styles.header__logo}>
         <Link to={process.env.PUBLIC_URL}>
-          <img src={Logo}/>
+          <img src={Logo} alt="S-Bobaho" />
         </Link>
       </div>
       <ul className={styles.header__nav}>
@@ -26,20 +26,23 @@ const Header = () => {
           <Link to={process.env.PUBLIC_URL}>Vay tiền</Link>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + '/sign-in'}>Mua hàng</Link>
+          <Link to={process.env.PUBLIC_URL + "/sign-in"}>Mua hàng</Link>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + '/welcome'} className={styles.cart}>
+          <Link
+            to={process.env.PUBLIC_URL + "/welcome"}
+            className={styles.cart}
+          >
             Giỏ hàng
-            <img src={Cart}/>
+            <img src={Cart} alt="Cart Icon" />
           </Link>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + '/welcome'}>Tài khoản</Link>
+          <Link to={process.env.PUBLIC_URL + "/account"}>Tài khoản</Link>
         </li>
       </ul>
     </header>
     // </BrowserRouter>
-  )
-}
+  );
+};
 export default Header;

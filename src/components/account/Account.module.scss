@@ -1,0 +1,32 @@
+@import "./../../assets/styles/common.scss";
+
+.account {
+  display: flex;
+  gap: 24px;
+  &__sidebar {
+    width: 30%;
+    ul {
+      li {
+        color: $green-color;
+        text-align: center;
+        font-weight: 600;
+        span {
+          cursor: pointer;
+        }
+        + li {
+          margin-top: 20px;
+        }
+        &.active span {
+          color: #fff;
+          background-color: $green-color;
+          padding: 8px 20px;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+        }
+      }
+    }
+  }
+}

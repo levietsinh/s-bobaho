@@ -1,5 +1,5 @@
-
-.header, .headerScroll {
+.header,
+.headerScroll {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,11 +7,11 @@
   position: fixed;
   width: 100%;
   z-index: 1009;
-  transition: .4s;
-  &__logo {}
+  transition: 0.4s;
   &__nav {
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
     li {
       a {
         text-decoration: none;
@@ -28,9 +28,6 @@
           }
         }
       }
-    }
-    li + li {
-      margin-left: 20px;
     }
   }
 }

@@ -9,6 +9,9 @@
   border: 2px solid #fff !important;
   background: transparent;
   outline: none !important;
+  &:disabled {
+    cursor: not-allowed;
+  }
   &:hover {
     color: #008664 !important;
     background: #fff !important;

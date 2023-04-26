@@ -1,19 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
-import { BrowserRouter as Router } from "react-router-dom"
-import { CookiesProvider } from 'react-cookie'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <CookiesProvider>
+      <Provider store={store}>
         <App />
-      </CookiesProvider>
+      </Provider>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

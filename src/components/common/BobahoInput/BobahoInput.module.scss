@@ -10,6 +10,12 @@
     background: #fff;
     caret-color: #008664;
     padding: 0 12px;
+    &:disabled {
+      background-color: rgba(128, 128, 128, 0.5);
+      cursor: not-allowed;
+      color: rgba(255, 255, 255, 0.5);
+      border: #fff;
+    }
   }
   .bobahoLabel {
     color: #fff;
