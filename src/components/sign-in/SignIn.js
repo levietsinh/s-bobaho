@@ -1,6 +1,6 @@
 import React from "react";
-import BabahoInput from "../common/BobahoInput";
-import BobahoButton from "../common/BobahoButton";
+import BabahoInput from "../common/bobaho-input/BabahoInput";
+import BobahoButton from "../common/bobaho-button/bobaho-button";
 import styles from "./SignIn.module.scss";
 import EntranceLayout from "../../layouts/entrance-layout/EntranceLayout";
 import { Link, useHistory } from "react-router-dom";
@@ -49,7 +49,6 @@ const SignIn = () => {
         // The signed-in user info.
         const user = result.user;
         dispatch(updateUserInfo(user));
-        console.log("user", user);
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
         const credential = FacebookAuthProvider.credentialFromResult(result);
         const accessToken = credential.accessToken;
@@ -71,7 +70,7 @@ const SignIn = () => {
   };
   useEffect(() => {
     if (userInfo) history.push(process.env.PUBLIC_URL);
-  }, []);
+  }, [history, userInfo]);
 
   return (
     <EntranceLayout>

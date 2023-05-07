@@ -1,6 +1,6 @@
 import React from "react";
-import BabahoInput from "../common/BobahoInput";
-import BobahoButton from "../common/BobahoButton";
+import BabahoInput from "../common/bobaho-input/BabahoInput";
+import BobahoButton from "../common/bobaho-button/bobaho-button";
 import styles from "./SignUp.module.scss";
 import EntranceLayout from "../../layouts/entrance-layout/EntranceLayout";
 import { Link } from "react-router-dom";

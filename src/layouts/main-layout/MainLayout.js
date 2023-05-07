@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/partials/Header";
+import Header from "../../components/partials/Header/Header";
 import styles from "./MainLayout.module.scss";
 
 const MainLayout = ({ children }) => {

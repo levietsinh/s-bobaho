@@ -1,13 +1,13 @@
 import { Router, Route, Switch, Redirect, useHistory } from "react-router-dom";
-import Home from "./components/Home/index";
-import SignIn from "./components/SignIn/index";
-import SignUp from "./components/SignUp/index";
-import ForgotPassword from "./components/ForgotPassword/index";
-import Welcome from "./components/Welcome/index";
+import Home from "./components/home/Home";
+import SignIn from "./components/sign-in/SignIn";
+import SignUp from "./components/sign-up/index";
+import ForgotPassword from "./components/forgot-password/ForgotPassword";
+import Welcome from "./components/welcome/index";
 import { withStyles } from "@mui/styles";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import GlobalStyles from "./components/GlobalStyles";
-import { withCookies, useCookies } from "react-cookie";
+import { withCookies } from "react-cookie";
 
 import { useSelector } from "react-redux";
 
@@ -86,6 +86,14 @@ function App() {
               )}
             </Route>
             <Route
+              path={`${process.env.PUBLIC_URL}/account`}
+              component={AccountPage}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/welcome`}
+              component={Welcome}
+            />
+            <Route
               path={`${process.env.PUBLIC_URL}/sign-in`}
               component={SignIn}
             />
@@ -96,14 +104,6 @@ function App() {
             <Route
               path={`${process.env.PUBLIC_URL}/forgot-password`}
               component={ForgotPassword}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/welcome`}
-              component={Welcome}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/account`}
-              component={AccountPage}
             />
           </Switch>
         </Router>
